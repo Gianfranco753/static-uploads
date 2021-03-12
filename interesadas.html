@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_409b5ab51cef459cba8476bc9961fc08 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_409b5ab51cef459cba8476bc9961fc08" ></div>
+        
+</body>
+<script>    
+    
+            var map_409b5ab51cef459cba8476bc9961fc08 = L.map(
+                "map_409b5ab51cef459cba8476bc9961fc08",
+                {
+                    center: [-23.6167934, -70.4066447],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1676cd0be9c04894b9159bcea87a80cf = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var marker_ff390abfa3674aab855d0aecab1db4d9 = L.marker(
+                [-23.626448, -70.385143],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_ccb41de324e04a018c4fc30ac448240c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ff390abfa3674aab855d0aecab1db4d9.setIcon(icon_ccb41de324e04a018c4fc30ac448240c);
+        
+    
+        var popup_4e00a01b819d4145b702c6f6cd3673fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_357139a3cb6648bd8648eafd48fc845e = $(`<div id="html_357139a3cb6648bd8648eafd48fc845e" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>0</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>Jardín Cristian Kinder Garden</td>     </tr>     <tr>       <th>Contacto</th>       <td>Desiree Solis</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>944116377</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>jardininfantilcristiano@gmail.com</td>     </tr>     <tr>       <th>Dirección</th>       <td>castro 5094</td>     </tr>     <tr>       <th>Rubro</th>       <td>JARDIN PRIVADO</td>     </tr>     <tr>       <th>Interés</th>       <td>ALTO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>3</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>2</td>     </tr>     <tr>       <th>Verificación</th>       <td>1</td>     </tr>     <tr>       <th>Testeo</th>       <td>1</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_4e00a01b819d4145b702c6f6cd3673fc.setContent(html_357139a3cb6648bd8648eafd48fc845e);
+        
+
+        marker_ff390abfa3674aab855d0aecab1db4d9.bindPopup(popup_4e00a01b819d4145b702c6f6cd3673fc)
+        ;
+
+        
+    
+    
+            var marker_79bb282642ea4d418d7677294cd7d3b8 = L.marker(
+                [-23.550938643975208, -70.39508434491533],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_90783fcd83ad4d8a8382f1e21a1b6cc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_79bb282642ea4d418d7677294cd7d3b8.setIcon(icon_90783fcd83ad4d8a8382f1e21a1b6cc3);
+        
+    
+        var popup_525c5a63659b4e0e8a296ca3e1fa3581 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fcb3ce4dc56c4317b1c998fbde5c7125 = $(`<div id="html_fcb3ce4dc56c4317b1c998fbde5c7125" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>1</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>DSI CHILE S.A.</td>     </tr>     <tr>       <th>Contacto</th>       <td>Eduardo Cortes Toro</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>56994329079</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>ecortes@dsichile.cl</td>     </tr>     <tr>       <th>Dirección</th>       <td>OFICINA AGUA SANTA 11825</td>     </tr>     <tr>       <th>Rubro</th>       <td>COMERCIO</td>     </tr>     <tr>       <th>Interés</th>       <td>ALTO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>8</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>3</td>     </tr>     <tr>       <th>Verificación</th>       <td>1</td>     </tr>     <tr>       <th>Testeo</th>       <td>1</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_525c5a63659b4e0e8a296ca3e1fa3581.setContent(html_fcb3ce4dc56c4317b1c998fbde5c7125);
+        
+
+        marker_79bb282642ea4d418d7677294cd7d3b8.bindPopup(popup_525c5a63659b4e0e8a296ca3e1fa3581)
+        ;
+
+        
+    
+    
+            var marker_9d4ad27907e0441186f5720314fc0cca = L.marker(
+                [-23.60011969569885, -70.39126980258592],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_2ad23368f03947f784c3cdae2030cc38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9d4ad27907e0441186f5720314fc0cca.setIcon(icon_2ad23368f03947f784c3cdae2030cc38);
+        
+    
+        var popup_f13a3f5e41c544f88037d262fd84b899 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7864b9b82139426a8d1174b62bda8ee0 = $(`<div id="html_7864b9b82139426a8d1174b62bda8ee0" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>2</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>Jardín Villa Feliz</td>     </tr>     <tr>       <th>Contacto</th>       <td>Mercy Godoy</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>987955703</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>Mercy16.godoy@gmail.com</td>     </tr>     <tr>       <th>Dirección</th>       <td>Las arcillas 186</td>     </tr>     <tr>       <th>Rubro</th>       <td>JARDIN PRIVADO</td>     </tr>     <tr>       <th>Interés</th>       <td>ALTO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>4</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>2</td>     </tr>     <tr>       <th>Verificación</th>       <td>1</td>     </tr>     <tr>       <th>Testeo</th>       <td>1</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_f13a3f5e41c544f88037d262fd84b899.setContent(html_7864b9b82139426a8d1174b62bda8ee0);
+        
+
+        marker_9d4ad27907e0441186f5720314fc0cca.bindPopup(popup_f13a3f5e41c544f88037d262fd84b899)
+        ;
+
+        
+    
+    
+            var marker_78c496ce3a3f4db6897972af6265c11c = L.marker(
+                [-23.679082, -70.40807],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_03570cbd8e274d2da70be4a75ae85762 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_78c496ce3a3f4db6897972af6265c11c.setIcon(icon_03570cbd8e274d2da70be4a75ae85762);
+        
+    
+        var popup_d7afec02398b44938db5db6ef07f4e72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1e1e8b9131f41cdb0f95889600d2bd7 = $(`<div id="html_f1e1e8b9131f41cdb0f95889600d2bd7" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>3</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>Jardín Carpier Jaydie</td>     </tr>     <tr>       <th>Contacto</th>       <td>Diela Alvarez</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>977076894</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>dielamaria@yahoo.es</td>     </tr>     <tr>       <th>Dirección</th>       <td>Gabriela Mistral 0531</td>     </tr>     <tr>       <th>Rubro</th>       <td>JARDIN PRIVADO</td>     </tr>     <tr>       <th>Interés</th>       <td>ALTO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>2</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>2</td>     </tr>     <tr>       <th>Verificación</th>       <td>1</td>     </tr>     <tr>       <th>Testeo</th>       <td>1</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>Total de Trabajadores</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>64</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_d7afec02398b44938db5db6ef07f4e72.setContent(html_f1e1e8b9131f41cdb0f95889600d2bd7);
+        
+
+        marker_78c496ce3a3f4db6897972af6265c11c.bindPopup(popup_d7afec02398b44938db5db6ef07f4e72)
+        ;
+
+        
+    
+    
+            var marker_0106a6dd97e644ab91833e70af97e214 = L.marker(
+                [-23.660476, -70.400151],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_c400b4d3176944aaa786cc4efd069708 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0106a6dd97e644ab91833e70af97e214.setIcon(icon_c400b4d3176944aaa786cc4efd069708);
+        
+    
+        var popup_ea5fe33dfda9487fba3c5b8cc7eeb6d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b1c2a00782e4677bae32aa72f1602b7 = $(`<div id="html_5b1c2a00782e4677bae32aa72f1602b7" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>4</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>The King Leanguage Institute</td>     </tr>     <tr>       <th>Contacto</th>       <td>Manuel Guajardo Márquez</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>995440191</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>director@tkli.cl</td>     </tr>     <tr>       <th>Dirección</th>       <td>Galleguillos Lorca 1594</td>     </tr>     <tr>       <th>Rubro</th>       <td>COMERCIO</td>     </tr>     <tr>       <th>Interés</th>       <td>BAJO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>8</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>4</td>     </tr>     <tr>       <th>Verificación</th>       <td>NaN</td>     </tr>     <tr>       <th>Testeo</th>       <td>NaN</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>N° de Mujeres</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>42</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_ea5fe33dfda9487fba3c5b8cc7eeb6d9.setContent(html_5b1c2a00782e4677bae32aa72f1602b7);
+        
+
+        marker_0106a6dd97e644ab91833e70af97e214.bindPopup(popup_ea5fe33dfda9487fba3c5b8cc7eeb6d9)
+        ;
+
+        
+    
+    
+            var marker_f61a3200562a488f86c0da870e4a382e = L.marker(
+                [-23.654205, -70.399734],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_176373dcddad410b842eb732877807a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_f61a3200562a488f86c0da870e4a382e.setIcon(icon_176373dcddad410b842eb732877807a6);
+        
+    
+        var popup_2a07fd0d472c4412b26db8fcffc6191b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d18717f256674887aefe1afdbe4211ff = $(`<div id="html_d18717f256674887aefe1afdbe4211ff" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>5</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>Peluquería D'pelos</td>     </tr>     <tr>       <th>Contacto</th>       <td>Marcela Bravo</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>978072025</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>march.marcela@gmail.com</td>     </tr>     <tr>       <th>Dirección</th>       <td>Jose Santos Ossa 2065</td>     </tr>     <tr>       <th>Rubro</th>       <td>PELUQUERIA</td>     </tr>     <tr>       <th>Interés</th>       <td>ALTO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>2</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>2</td>     </tr>     <tr>       <th>Verificación</th>       <td>1</td>     </tr>     <tr>       <th>Testeo</th>       <td>1</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>FIRMADO</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>N° de Hombres</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>22</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_2a07fd0d472c4412b26db8fcffc6191b.setContent(html_d18717f256674887aefe1afdbe4211ff);
+        
+
+        marker_f61a3200562a488f86c0da870e4a382e.bindPopup(popup_2a07fd0d472c4412b26db8fcffc6191b)
+        ;
+
+        
+    
+    
+            var marker_e4d672589db04bafbddc442996aa5a36 = L.marker(
+                [-23.650298, -70.398475],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_dfab1ed5d60f4d98a50df91e4ba907f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e4d672589db04bafbddc442996aa5a36.setIcon(icon_dfab1ed5d60f4d98a50df91e4ba907f0);
+        
+    
+        var popup_1f76a34fb9fb4a4ab6c6297b93b10a8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97f7c509474f42b48449e2169dd6bb74 = $(`<div id="html_97f7c509474f42b48449e2169dd6bb74" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>6</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>Jessica</td>     </tr>     <tr>       <th>Contacto</th>       <td>JESSICA RAMIREZ</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>998358207</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>JESSICARRAMIREZS@GMAIL.COM</td>     </tr>     <tr>       <th>Dirección</th>       <td>CARLOS CONDELL 2376</td>     </tr>     <tr>       <th>Rubro</th>       <td>COMERCIO</td>     </tr>     <tr>       <th>Interés</th>       <td>ALTO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>1</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>1</td>     </tr>     <tr>       <th>Verificación</th>       <td>1</td>     </tr>     <tr>       <th>Testeo</th>       <td>1</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>FIRMADO</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_1f76a34fb9fb4a4ab6c6297b93b10a8b.setContent(html_97f7c509474f42b48449e2169dd6bb74);
+        
+
+        marker_e4d672589db04bafbddc442996aa5a36.bindPopup(popup_1f76a34fb9fb4a4ab6c6297b93b10a8b)
+        ;
+
+        
+    
+    
+            var marker_1fa4f0c59f444dfca019e51a969f038e = L.marker(
+                [-23.649331, -70.399013],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_2b482f912b0b439ca5f2a56633fe2a16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1fa4f0c59f444dfca019e51a969f038e.setIcon(icon_2b482f912b0b439ca5f2a56633fe2a16);
+        
+    
+        var popup_9cbe284941ae4146a56dc2a2fc9f9233 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38f29d29474d4136b57ddd19ec69cae6 = $(`<div id="html_38f29d29474d4136b57ddd19ec69cae6" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>7</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>Gatce , venta por menor</td>     </tr>     <tr>       <th>Contacto</th>       <td>Carla Gatica</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>965191365</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>carlaaa.g16@gmail.com</td>     </tr>     <tr>       <th>Dirección</th>       <td>Maipu 447</td>     </tr>     <tr>       <th>Rubro</th>       <td>COMERCIO</td>     </tr>     <tr>       <th>Interés</th>       <td>BAJO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>2</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>1</td>     </tr>     <tr>       <th>Verificación</th>       <td>NaN</td>     </tr>     <tr>       <th>Testeo</th>       <td>NaN</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>FIRMADO</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_9cbe284941ae4146a56dc2a2fc9f9233.setContent(html_38f29d29474d4136b57ddd19ec69cae6);
+        
+
+        marker_1fa4f0c59f444dfca019e51a969f038e.bindPopup(popup_9cbe284941ae4146a56dc2a2fc9f9233)
+        ;
+
+        
+    
+    
+            var marker_1939e721aaba4583b65852ae554231b8 = L.marker(
+                [-23.66046067677044, -70.4001199872417],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_b1c392f844324c83b5ea950ed487d75e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1939e721aaba4583b65852ae554231b8.setIcon(icon_b1c392f844324c83b5ea950ed487d75e);
+        
+    
+        var popup_e7acbc2c627c43bdafd2c2013e844c8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f57162a860c433897bf690a811a2a0d = $(`<div id="html_3f57162a860c433897bf690a811a2a0d" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>8</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>IMI SpA</td>     </tr>     <tr>       <th>Contacto</th>       <td>Diego Donoso</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>56971736124</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>prevencion@imispa.cl</td>     </tr>     <tr>       <th>Dirección</th>       <td>Gral Velásquez 990</td>     </tr>     <tr>       <th>Rubro</th>       <td>COMERCIO</td>     </tr>     <tr>       <th>Interés</th>       <td>BAJO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>-</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>-</td>     </tr>     <tr>       <th>Verificación</th>       <td>NaN</td>     </tr>     <tr>       <th>Testeo</th>       <td>NaN</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_e7acbc2c627c43bdafd2c2013e844c8d.setContent(html_3f57162a860c433897bf690a811a2a0d);
+        
+
+        marker_1939e721aaba4583b65852ae554231b8.bindPopup(popup_e7acbc2c627c43bdafd2c2013e844c8d)
+        ;
+
+        
+    
+    
+            var marker_4979039fbfd54241a710fd460f312cca = L.marker(
+                [-23.649179656824963, -70.38883953142073],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_f1242f4da0054784a966b4db68ab8a64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4979039fbfd54241a710fd460f312cca.setIcon(icon_f1242f4da0054784a966b4db68ab8a64);
+        
+    
+        var popup_f14c5adf1f624397a873d4b651408bae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ddbdaa7eb9bf4261af5ecb0c88d33372 = $(`<div id="html_ddbdaa7eb9bf4261af5ecb0c88d33372" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>9</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>Comercio RBA</td>     </tr>     <tr>       <th>Contacto</th>       <td>Rubén Caro</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>56973982915</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>ventascomercialrba@gmail.com</td>     </tr>     <tr>       <th>Dirección</th>       <td>Av. Andrés Sabella Gálvez 3092</td>     </tr>     <tr>       <th>Rubro</th>       <td>COMERCIO</td>     </tr>     <tr>       <th>Interés</th>       <td>BAJO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>-</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>-</td>     </tr>     <tr>       <th>Verificación</th>       <td>NaN</td>     </tr>     <tr>       <th>Testeo</th>       <td>NaN</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_f14c5adf1f624397a873d4b651408bae.setContent(html_ddbdaa7eb9bf4261af5ecb0c88d33372);
+        
+
+        marker_4979039fbfd54241a710fd460f312cca.bindPopup(popup_f14c5adf1f624397a873d4b651408bae)
+        ;
+
+        
+    
+    
+            var marker_89354ed479174eee898d72f206375bbf = L.marker(
+                [-23.648712, -70.400021],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_1bd8de77dd744374a2d8d2c6c103cc15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_89354ed479174eee898d72f206375bbf.setIcon(icon_1bd8de77dd744374a2d8d2c6c103cc15);
+        
+    
+        var popup_654f831a03cc418cb3002af793266215 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4bb4e56c6556471e9ac14a19fb570db2 = $(`<div id="html_4bb4e56c6556471e9ac14a19fb570db2" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>10</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>MS Boutique</td>     </tr>     <tr>       <th>Contacto</th>       <td>Denisse Perez</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>56953867979</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>Mystyle.byale@gmail.com</td>     </tr>     <tr>       <th>Dirección</th>       <td>SAN MARTIN 2372</td>     </tr>     <tr>       <th>Rubro</th>       <td>COMERCIO</td>     </tr>     <tr>       <th>Interés</th>       <td>BAJO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>1</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>1</td>     </tr>     <tr>       <th>Verificación</th>       <td>NaN</td>     </tr>     <tr>       <th>Testeo</th>       <td>NaN</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_654f831a03cc418cb3002af793266215.setContent(html_4bb4e56c6556471e9ac14a19fb570db2);
+        
+
+        marker_89354ed479174eee898d72f206375bbf.bindPopup(popup_654f831a03cc418cb3002af793266215)
+        ;
+
+        
+    
+    
+            var marker_8e01865dece847aab937c7248ef241ab = L.marker(
+                [-23.648712, -70.400021],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_2dfd5758eee54c75aedc279f4a2be5f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8e01865dece847aab937c7248ef241ab.setIcon(icon_2dfd5758eee54c75aedc279f4a2be5f4);
+        
+    
+        var popup_7f3f0b03ea914e7db4aac18f22237a26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_366f4a6f3c1f49a096cc29b34de739d4 = $(`<div id="html_366f4a6f3c1f49a096cc29b34de739d4" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>11</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>Resilienza barber</td>     </tr>     <tr>       <th>Contacto</th>       <td>Nicolás araya</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>5691512909</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>Resilenzabarber@gmail.com</td>     </tr>     <tr>       <th>Dirección</th>       <td>SAN MARTIN 2372</td>     </tr>     <tr>       <th>Rubro</th>       <td>COMERCIO</td>     </tr>     <tr>       <th>Interés</th>       <td>BAJO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>4</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>2</td>     </tr>     <tr>       <th>Verificación</th>       <td>NaN</td>     </tr>     <tr>       <th>Testeo</th>       <td>NaN</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_7f3f0b03ea914e7db4aac18f22237a26.setContent(html_366f4a6f3c1f49a096cc29b34de739d4);
+        
+
+        marker_8e01865dece847aab937c7248ef241ab.bindPopup(popup_7f3f0b03ea914e7db4aac18f22237a26)
+        ;
+
+        
+    
+    
+            var marker_bbce25836917433982efc7d813e58e52 = L.marker(
+                [-23.659008, -70.397723],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_7ab42242b380435193bbffedace09e9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_bbce25836917433982efc7d813e58e52.setIcon(icon_7ab42242b380435193bbffedace09e9b);
+        
+    
+        var popup_c251c21683b9440b994555c05926fa9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c5c7a1c5fc24d6c8579a7423a67f6cf = $(`<div id="html_4c5c7a1c5fc24d6c8579a7423a67f6cf" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>12</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>Peluqueria Cecilia</td>     </tr>     <tr>       <th>Contacto</th>       <td>Cecilia Silva</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>984360628</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>cecilia_9661@hotmail.com</td>     </tr>     <tr>       <th>Dirección</th>       <td>Coquimbo 1147</td>     </tr>     <tr>       <th>Rubro</th>       <td>PELUQUERIA</td>     </tr>     <tr>       <th>Interés</th>       <td>BAJO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>1</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>1</td>     </tr>     <tr>       <th>Verificación</th>       <td>NaN</td>     </tr>     <tr>       <th>Testeo</th>       <td>NaN</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_c251c21683b9440b994555c05926fa9c.setContent(html_4c5c7a1c5fc24d6c8579a7423a67f6cf);
+        
+
+        marker_bbce25836917433982efc7d813e58e52.bindPopup(popup_c251c21683b9440b994555c05926fa9c)
+        ;
+
+        
+    
+    
+            var marker_77893648bb434118b0bb1d10bbe06b97 = L.marker(
+                [-23.625092, -70.381584],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_b8f12d60784b4c9f9bc53a8d60ab9f33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_77893648bb434118b0bb1d10bbe06b97.setIcon(icon_b8f12d60784b4c9f9bc53a8d60ab9f33);
+        
+    
+        var popup_a1c936c0457d4fc084169766221f50fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09fad2a958584848ae9587419b52b4b9 = $(`<div id="html_09fad2a958584848ae9587419b52b4b9" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>13</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>Corazón Completo</td>     </tr>     <tr>       <th>Contacto</th>       <td>Elena Tapia</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>981532707</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>etapiam@pjud.cl</td>     </tr>     <tr>       <th>Dirección</th>       <td>Puerto Natales 5355</td>     </tr>     <tr>       <th>Rubro</th>       <td>COMERCIO</td>     </tr>     <tr>       <th>Interés</th>       <td>BAJO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>3</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>2</td>     </tr>     <tr>       <th>Verificación</th>       <td>NaN</td>     </tr>     <tr>       <th>Testeo</th>       <td>NaN</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_a1c936c0457d4fc084169766221f50fd.setContent(html_09fad2a958584848ae9587419b52b4b9);
+        
+
+        marker_77893648bb434118b0bb1d10bbe06b97.bindPopup(popup_a1c936c0457d4fc084169766221f50fd)
+        ;
+
+        
+    
+    
+            var marker_2c46ecd62a6e435984ae8c03805ded40 = L.marker(
+                [-23.655772038789568, -70.39933127374916],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_c2bf41c3dbc8429cad862eee9445fc1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_2c46ecd62a6e435984ae8c03805ded40.setIcon(icon_c2bf41c3dbc8429cad862eee9445fc1d);
+        
+    
+        var popup_b6fb44f8a0fa41d09029c2b0ba816594 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b1d218b33406417bb02ffab7da046420 = $(`<div id="html_b1d218b33406417bb02ffab7da046420" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>14</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>Edificio Torre Taira</td>     </tr>     <tr>       <th>Contacto</th>       <td>Alicia Machuca Varela</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>56994457854</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>alicia.machuca@gmail.com</td>     </tr>     <tr>       <th>Dirección</th>       <td>14 de febrero 1985</td>     </tr>     <tr>       <th>Rubro</th>       <td>NaN</td>     </tr>     <tr>       <th>Interés</th>       <td>BAJO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>2</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>2</td>     </tr>     <tr>       <th>Verificación</th>       <td>NaN</td>     </tr>     <tr>       <th>Testeo</th>       <td>NaN</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_b6fb44f8a0fa41d09029c2b0ba816594.setContent(html_b1d218b33406417bb02ffab7da046420);
+        
+
+        marker_2c46ecd62a6e435984ae8c03805ded40.bindPopup(popup_b6fb44f8a0fa41d09029c2b0ba816594)
+        ;
+
+        
+    
+    
+            var marker_e931be68c7a84911b9bd3a7c15bcd507 = L.marker(
+                [-23.653012, -70.398278],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_42fca78514544133b27a38141439b785 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_e931be68c7a84911b9bd3a7c15bcd507.setIcon(icon_42fca78514544133b27a38141439b785);
+        
+    
+        var popup_b83343403a3d48b9a6d01bdd82cacbaf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa95acc9321646bca288d9afb0834d29 = $(`<div id="html_fa95acc9321646bca288d9afb0834d29" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>15</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>BEAUTY SECRET SPA</td>     </tr>     <tr>       <th>Contacto</th>       <td>ANA RUTH CAICEDO MURILLO</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>985757096</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>CAICEDOANA338@GMAIL.COM</td>     </tr>     <tr>       <th>Dirección</th>       <td>JOSE SANTOS OSSA 2220</td>     </tr>     <tr>       <th>Rubro</th>       <td>PELUQUERIA</td>     </tr>     <tr>       <th>Interés</th>       <td>ALTO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>6</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>4</td>     </tr>     <tr>       <th>Verificación</th>       <td>1</td>     </tr>     <tr>       <th>Testeo</th>       <td>1</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_b83343403a3d48b9a6d01bdd82cacbaf.setContent(html_fa95acc9321646bca288d9afb0834d29);
+        
+
+        marker_e931be68c7a84911b9bd3a7c15bcd507.bindPopup(popup_b83343403a3d48b9a6d01bdd82cacbaf)
+        ;
+
+        
+    
+    
+            var marker_168aae10fbd341e5848cfec3950d52d9 = L.marker(
+                [-23.658963, -70.399313],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_299d910adb9f4254aa76a2ed4b1cf761 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_168aae10fbd341e5848cfec3950d52d9.setIcon(icon_299d910adb9f4254aa76a2ed4b1cf761);
+        
+    
+        var popup_348a8536480e49a5b177f014429e6d57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b73f792040ea4137978bc3923606b9e8 = $(`<div id="html_b73f792040ea4137978bc3923606b9e8" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>16</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>Lis Creaciones</td>     </tr>     <tr>       <th>Contacto</th>       <td>Libny Salazar</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>999694383</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>lis.salazar@gmail.com</td>     </tr>     <tr>       <th>Dirección</th>       <td>Salvador Reyes 1050</td>     </tr>     <tr>       <th>Rubro</th>       <td>COMERCIO</td>     </tr>     <tr>       <th>Interés</th>       <td>ALTO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>1</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>1</td>     </tr>     <tr>       <th>Verificación</th>       <td>1</td>     </tr>     <tr>       <th>Testeo</th>       <td>1</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>ESTA EN TESTEO</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_348a8536480e49a5b177f014429e6d57.setContent(html_b73f792040ea4137978bc3923606b9e8);
+        
+
+        marker_168aae10fbd341e5848cfec3950d52d9.bindPopup(popup_348a8536480e49a5b177f014429e6d57)
+        ;
+
+        
+    
+    
+            var marker_33012cc7c2f449309a0a27f97b800845 = L.marker(
+                [-23.658963, -70.399313],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_56d8a1eb2460449d94e8110a4eb68d07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_33012cc7c2f449309a0a27f97b800845.setIcon(icon_56d8a1eb2460449d94e8110a4eb68d07);
+        
+    
+        var popup_c7e88d620938469098dcadfb392ceb02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb4bb1ad3b7840319bddf8e2df8ca36b = $(`<div id="html_cb4bb1ad3b7840319bddf8e2df8ca36b" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>17</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>Deporte Aventura</td>     </tr>     <tr>       <th>Contacto</th>       <td>Claudia Gallego</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>979935271</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>NaN</td>     </tr>     <tr>       <th>Dirección</th>       <td>Salvador Reyes 1050</td>     </tr>     <tr>       <th>Rubro</th>       <td>COMERCIO</td>     </tr>     <tr>       <th>Interés</th>       <td>ALTO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>-</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>-</td>     </tr>     <tr>       <th>Verificación</th>       <td>1</td>     </tr>     <tr>       <th>Testeo</th>       <td>1</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_c7e88d620938469098dcadfb392ceb02.setContent(html_cb4bb1ad3b7840319bddf8e2df8ca36b);
+        
+
+        marker_33012cc7c2f449309a0a27f97b800845.bindPopup(popup_c7e88d620938469098dcadfb392ceb02)
+        ;
+
+        
+    
+    
+            var marker_bed40b9c4a5a4e0bb60c6d92a3c4eea7 = L.marker(
+                [-23.658963, -70.399313],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_f94d340f4dc442a9aacc62178b1d05ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bed40b9c4a5a4e0bb60c6d92a3c4eea7.setIcon(icon_f94d340f4dc442a9aacc62178b1d05ee);
+        
+    
+        var popup_595b0f68e82e467d870a1dd8e40a91b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54e721ee974142d797794a375727bdd3 = $(`<div id="html_54e721ee974142d797794a375727bdd3" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>18</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>Cueros exclusivos</td>     </tr>     <tr>       <th>Contacto</th>       <td>Ana Maria Garcia</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>996722857</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>marcelaoliveras1966@gmail.com</td>     </tr>     <tr>       <th>Dirección</th>       <td>Salvador Reyes 1050</td>     </tr>     <tr>       <th>Rubro</th>       <td>COMERCIO</td>     </tr>     <tr>       <th>Interés</th>       <td>ALTO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>1</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>1</td>     </tr>     <tr>       <th>Verificación</th>       <td>1</td>     </tr>     <tr>       <th>Testeo</th>       <td>1</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_595b0f68e82e467d870a1dd8e40a91b4.setContent(html_54e721ee974142d797794a375727bdd3);
+        
+
+        marker_bed40b9c4a5a4e0bb60c6d92a3c4eea7.bindPopup(popup_595b0f68e82e467d870a1dd8e40a91b4)
+        ;
+
+        
+    
+    
+            var marker_ca8a6c29db9c4c38b21ba3e5b413d17c = L.marker(
+                [-23.658963, -70.399313],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_dabc185b0eb84ce4ad3677abae9d2cbf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ca8a6c29db9c4c38b21ba3e5b413d17c.setIcon(icon_dabc185b0eb84ce4ad3677abae9d2cbf);
+        
+    
+        var popup_ac228b381811498faa74b203e76df9a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d83e3aac00284defb4096fc4bd9f9507 = $(`<div id="html_d83e3aac00284defb4096fc4bd9f9507" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>19</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>Portal de las tentaciones</td>     </tr>     <tr>       <th>Contacto</th>       <td>Carmen Cartier</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>998174763</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>CARMENCLEO@YAHOO.ES</td>     </tr>     <tr>       <th>Dirección</th>       <td>Salvador Reyes 1050</td>     </tr>     <tr>       <th>Rubro</th>       <td>COMERCIO</td>     </tr>     <tr>       <th>Interés</th>       <td>ALTO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>1</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>1</td>     </tr>     <tr>       <th>Verificación</th>       <td>1</td>     </tr>     <tr>       <th>Testeo</th>       <td>1</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>ESTA EN TESTEO</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_ac228b381811498faa74b203e76df9a1.setContent(html_d83e3aac00284defb4096fc4bd9f9507);
+        
+
+        marker_ca8a6c29db9c4c38b21ba3e5b413d17c.bindPopup(popup_ac228b381811498faa74b203e76df9a1)
+        ;
+
+        
+    
+    
+            var marker_99000ecc0030423698887e1713f69efd = L.marker(
+                [-23.658963, -70.399313],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_1aa86c7e73864951af4c592c1511245c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_99000ecc0030423698887e1713f69efd.setIcon(icon_1aa86c7e73864951af4c592c1511245c);
+        
+    
+        var popup_85580a95da7843f5893e33834e72ab3c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c67f4162373a43dbac88487583d5fe04 = $(`<div id="html_c67f4162373a43dbac88487583d5fe04" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>20</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>La Maison du savor de Marseille</td>     </tr>     <tr>       <th>Contacto</th>       <td>Dana Alcayaga</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>33769448736</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>NaN</td>     </tr>     <tr>       <th>Dirección</th>       <td>Salvador Reyes 1050</td>     </tr>     <tr>       <th>Rubro</th>       <td>COMERCIO</td>     </tr>     <tr>       <th>Interés</th>       <td>ALTO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>-</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>-</td>     </tr>     <tr>       <th>Verificación</th>       <td>1</td>     </tr>     <tr>       <th>Testeo</th>       <td>1</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_85580a95da7843f5893e33834e72ab3c.setContent(html_c67f4162373a43dbac88487583d5fe04);
+        
+
+        marker_99000ecc0030423698887e1713f69efd.bindPopup(popup_85580a95da7843f5893e33834e72ab3c)
+        ;
+
+        
+    
+    
+            var marker_65b2a7d33a37480dbdb671b242851b99 = L.marker(
+                [-23.658963, -70.399313],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_4a1dbf95727d432c873ef3ee9acc0872 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_65b2a7d33a37480dbdb671b242851b99.setIcon(icon_4a1dbf95727d432c873ef3ee9acc0872);
+        
+    
+        var popup_fa47031f0ae7487b9e37905c70f5c057 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe6301a5ec934e02900eb786218fd3b3 = $(`<div id="html_fe6301a5ec934e02900eb786218fd3b3" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>21</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>Cuidado Natural</td>     </tr>     <tr>       <th>Contacto</th>       <td>Ximena Roman</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>998271974</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>NaN</td>     </tr>     <tr>       <th>Dirección</th>       <td>Salvador Reyes 1050</td>     </tr>     <tr>       <th>Rubro</th>       <td>COMERCIO</td>     </tr>     <tr>       <th>Interés</th>       <td>ALTO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>-</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>-</td>     </tr>     <tr>       <th>Verificación</th>       <td>1</td>     </tr>     <tr>       <th>Testeo</th>       <td>1</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_fa47031f0ae7487b9e37905c70f5c057.setContent(html_fe6301a5ec934e02900eb786218fd3b3);
+        
+
+        marker_65b2a7d33a37480dbdb671b242851b99.bindPopup(popup_fa47031f0ae7487b9e37905c70f5c057)
+        ;
+
+        
+    
+    
+            var marker_a9344a052f654df5b3b92a385b18e37b = L.marker(
+                [-23.658963, -70.399313],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_98ff3ce417a14387b382a6dee6a608d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a9344a052f654df5b3b92a385b18e37b.setIcon(icon_98ff3ce417a14387b382a6dee6a608d1);
+        
+    
+        var popup_174d11e7d18b454d9cf293a268ee6e59 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2149e2c8f0f4a47b5d018bc20f8dd3c = $(`<div id="html_d2149e2c8f0f4a47b5d018bc20f8dd3c" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>22</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>Cafeteria Manuan</td>     </tr>     <tr>       <th>Contacto</th>       <td>Manuel Foncea</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>552220631</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>NaN</td>     </tr>     <tr>       <th>Dirección</th>       <td>Salvador Reyes 1050</td>     </tr>     <tr>       <th>Rubro</th>       <td>ALIMENTACION Y HOSPEDAJE</td>     </tr>     <tr>       <th>Interés</th>       <td>ALTO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>-</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>-</td>     </tr>     <tr>       <th>Verificación</th>       <td>1</td>     </tr>     <tr>       <th>Testeo</th>       <td>1</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_174d11e7d18b454d9cf293a268ee6e59.setContent(html_d2149e2c8f0f4a47b5d018bc20f8dd3c);
+        
+
+        marker_a9344a052f654df5b3b92a385b18e37b.bindPopup(popup_174d11e7d18b454d9cf293a268ee6e59)
+        ;
+
+        
+    
+    
+            var marker_917baf7d4be14457bd3c8b34d711cf00 = L.marker(
+                [-23.658963, -70.399313],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_15f04cd402c14b658d76d09fd6ee69d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_917baf7d4be14457bd3c8b34d711cf00.setIcon(icon_15f04cd402c14b658d76d09fd6ee69d9);
+        
+    
+        var popup_66e65a26e0b34223b2fd9dd085e666e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87969e93e0cb41ee8493a9096a4f495c = $(`<div id="html_87969e93e0cb41ee8493a9096a4f495c" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>23</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>Carmen Cartier Galeria</td>     </tr>     <tr>       <th>Contacto</th>       <td>Carmen Cartier</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>998174763</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>CARMENCLEO@YAHOO.ES</td>     </tr>     <tr>       <th>Dirección</th>       <td>Salvador Reyes 1050</td>     </tr>     <tr>       <th>Rubro</th>       <td>COMERCIO</td>     </tr>     <tr>       <th>Interés</th>       <td>ALTO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>3</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>2</td>     </tr>     <tr>       <th>Verificación</th>       <td>1</td>     </tr>     <tr>       <th>Testeo</th>       <td>1</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>ESTA EN TESTEO</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_66e65a26e0b34223b2fd9dd085e666e6.setContent(html_87969e93e0cb41ee8493a9096a4f495c);
+        
+
+        marker_917baf7d4be14457bd3c8b34d711cf00.bindPopup(popup_66e65a26e0b34223b2fd9dd085e666e6)
+        ;
+
+        
+    
+    
+            var marker_10a0f2beb99c4501a1bbc33965b16a13 = L.marker(
+                [-23.66239, -70.39697],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_1a64485a71ed45fb8e3ae49b6e2c41de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_10a0f2beb99c4501a1bbc33965b16a13.setIcon(icon_1a64485a71ed45fb8e3ae49b6e2c41de);
+        
+    
+        var popup_a068a8d1d8f842659c404f181c2a23b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07fc60ec753242fead912916f4992f52 = $(`<div id="html_07fc60ec753242fead912916f4992f52" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>24</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>Venta de comida preparada Rodrigo Olivares EIRL</td>     </tr>     <tr>       <th>Contacto</th>       <td>Rodrigo Olivares</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>982021982</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>rodrigo.olivares@hotmail.cl</td>     </tr>     <tr>       <th>Dirección</th>       <td>av. argentina 01434</td>     </tr>     <tr>       <th>Rubro</th>       <td>ALIMENTACION Y HOSPEDAJE</td>     </tr>     <tr>       <th>Interés</th>       <td>ALTO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>8</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>6</td>     </tr>     <tr>       <th>Verificación</th>       <td>1</td>     </tr>     <tr>       <th>Testeo</th>       <td>1</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_a068a8d1d8f842659c404f181c2a23b3.setContent(html_07fc60ec753242fead912916f4992f52);
+        
+
+        marker_10a0f2beb99c4501a1bbc33965b16a13.bindPopup(popup_a068a8d1d8f842659c404f181c2a23b3)
+        ;
+
+        
+    
+    
+            var marker_ed6b421ad68c40e5ad44a238f50e6d70 = L.marker(
+                [-23.681875, -70.411983],
+                {}
+            ).addTo(map_409b5ab51cef459cba8476bc9961fc08);
+        
+    
+            var icon_7da9aabd122b41e7bf42e0a0aeb6ef51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ed6b421ad68c40e5ad44a238f50e6d70.setIcon(icon_7da9aabd122b41e7bf42e0a0aeb6ef51);
+        
+    
+        var popup_8525babb9499483e9fcfa6478e218925 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea236245ed7c42b58eed7480254d2e31 = $(`<div id="html_ea236245ed7c42b58eed7480254d2e31" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>25</th>     </tr>   </thead>   <tbody>     <tr>       <th>Nombre empresa 26</th>       <td>Instituto educacional Altair</td>     </tr>     <tr>       <th>Contacto</th>       <td>Lorena Gonzalez Riquelme</td>     </tr>     <tr>       <th>Telefono contacto</th>       <td>56981846899</td>     </tr>     <tr>       <th>Correo electrónico</th>       <td>cordinadorageneralaltair@gmail.com</td>     </tr>     <tr>       <th>Dirección</th>       <td>Angamos 1167</td>     </tr>     <tr>       <th>Rubro</th>       <td>COMERCIO</td>     </tr>     <tr>       <th>Interés</th>       <td>BAJO</td>     </tr>     <tr>       <th>N° Trabajadores 64</th>       <td>3</td>     </tr>     <tr>       <th>N° Mujeres 42</th>       <td>2</td>     </tr>     <tr>       <th>Verificación</th>       <td>NaN</td>     </tr>     <tr>       <th>Testeo</th>       <td>NaN</td>     </tr>     <tr>       <th>Comentarios</th>       <td>NaN</td>     </tr>     <tr>       <th>Acuerdo</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 13</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 14</th>       <td>NaN</td>     </tr>     <tr>       <th>Unnamed: 15</th>       <td>NaN</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_8525babb9499483e9fcfa6478e218925.setContent(html_ea236245ed7c42b58eed7480254d2e31);
+        
+
+        marker_ed6b421ad68c40e5ad44a238f50e6d70.bindPopup(popup_8525babb9499483e9fcfa6478e218925)
+        ;
+
+        
+    
+</script>
